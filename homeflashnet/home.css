@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: inter;
+}
+nav {
+  /* height: 80px; */
+  background: #ffffff;
+  box-shadow: 0px 8px 32.4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  /* position: fixed; */
+}
+
+/* label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  } */
+label.logo {
+  padding: 0 45px;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 30px;
+}
+nav ul li a {
+  display: flex;
+  color: black;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  color: #7500ff;
+  transition: 0.5s;
+}
+/* nav button{
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 25px ;
+    color: white;
+    background: #511DAB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset -8px -8px 9.9px rgba(0, 0, 0, 0.56);
+    border-radius: 10px;
+  } */
+/* Navbar Button Book A Demo */
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+.checkbtn {
+  font-size: 30px;
+  color: #7500ff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1055px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #1b102ef6;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: lightblue;
+    background-color: #7a34d4;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+@media (max-width: 1255px) {
+  .slide img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 588px) {
+  .slide img {
+    margin-top: 10px;
+    width: 100%;
+  }
+  #slider-container {
+    width: 100%;
+  }
+
+  .logo img {
+    float: left;
+    margin-top: 10px;
+    width: 5em;
+    height: 2.1em;
+  }
+}
+
+.offers {
+  height: 100vh;
+}
+.imageshome {
+  display: flex;
+  width: 100%;
+  transition: 0.5s;
+}
+.slideimage {
+  width: 100%;
+}
+.slideimage .images {
+  width: 100vw;
+}
+.offersimage {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -22vw;
+  position: relative;
+}
+.button button {
+  background-color: transparent;
+  border: none;
+  font-size: 50px;
+  font-family: monospace;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px;
+  color: #ffffff;
+}
